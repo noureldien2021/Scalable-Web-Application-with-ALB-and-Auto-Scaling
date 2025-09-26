@@ -24,7 +24,7 @@ Deploy a containerized web application on AWS using EC2 instances, ensuring high
 2. Application Load Balancer (ALB): Distributes traffic across multiple instances.
 3. Auto Scaling Group (ASG): Ensures instances scale based on demand.
 4. IAM: Role-based access to instances.
-5. CloudWatch & SNS: Monitor performance and send alerts.
+5. Eventbridge & SNS: Monitor performance and send alerts.
 6. Docker: Containerized the web application to ensure portability and easy deployment
 
 

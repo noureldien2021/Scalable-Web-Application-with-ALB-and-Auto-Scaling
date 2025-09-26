@@ -57,7 +57,18 @@ Deploy a simple web application on AWS using EC2 instances, ensuring high availa
 ![Subnets](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/subnet.png)
 
 ---
-4. Connect via SSH to EC2, install Docker, and run the application container.
+
+### Step 4: Create Internet Gateway (IGW) and Update Route Table
+- Created an Internet Gateway and attached it to the VPC.
+- 
+![IGW](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/internet%20getway.png)
+
+- Updated the Route Table to allow outbound internet traffic through the IGW.
+
+![IGW](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/RT.png)
+
+  
+---
 5. Create an Elastic Container Registry (ECR) and push the Docker image.
 6. Create an AMI (template) from the configured EC2 instance.
 7. Configure an Auto Scaling Group (ASG) using the AMI and attach it to a Target Group.

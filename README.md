@@ -78,7 +78,14 @@ Deploy a simple web application on AWS using EC2 instances, ensuring high availa
 ![EC2](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/base%20ec2.png)
 
 ---
-6. Create an AMI (template) from the configured EC2 instance.
+### Step 6: Install Docker on EC2
+- Connected via SSH and installed Docker.  
+
+![Docker EC2](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/access%20on%20ec2.png)
+![Docker EC2](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/install%20docker.png)
+![Docker EC2](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/docker%20version.png)
+
+---
 7. Configure an Auto Scaling Group (ASG) using the AMI and attach it to a Target Group.
 8. Create an Application Load Balancer (ALB) and register the Target Group.
 9. Set up monitoring and notifications:

@@ -107,7 +107,7 @@ docker run -d -p 80:80 hv-app
 
 ---
 
-### Step 8: Create Launch Template
+### Step 8: Create Template
 - Created a Launch Template based on the configured EC2.  
 
 ![Launch Template](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/template.png)
@@ -161,11 +161,27 @@ docker run -d -p 80:80 381492071612.dkr.ecr.us-east-1.amazonaws.com/hv-app:lates
 
 ---
 
-9. Set up monitoring and notifications:
-   - Create an SNS topic for email alerts.
-   - Create an EventBridge rule to trigger SNS on Auto Scaling events.
-10. Test the architecture (load balancing, scaling up/down, and alerts).
+### Step 12: Create SNS Topic
+- Set up Amazon SNS topic for notifications.  
 
+![SNS](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/sns-topic.png)
+
+---
+
+### Step 13: Create EventBridge Rule
+- Created EventBridge rule to trigger notifications based on events.  
+
+![EventBridge](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/eventbridge.png)
+
+---
+
+### Step 14: Test the Setup
+- Validated scaling, load balancing, and notification workflows.  
+
+![Test](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/app-1.png)
+
+
+---
 # Learning Outcomes
 1. Setting up secure and scalable EC2-based web applications.
 2. Implementing high availability using ALB and ASG.

@@ -80,13 +80,26 @@ Deploy a simple web application on AWS using EC2 instances, ensuring high availa
 ---
 
 ### Step 6: Run App on EC2
-- Connected to the EC2 instance via SSH.  
-- Installed Docker on the instance.  
-- Built and ran the containerized application.  
 
-**Build Image Command:**
+
 ```bash
+# Step 6: Connect, Install Docker, Build & Run App
+
+# 1. Connect to EC2 via SSH
+ssh -i app-HV-keypair.pem ec2-user@<EC2-Public-IP>
+
+# 2. Install Docker
+sudo yum update -y
+sudo yum install docker -y
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo usermod -aG docker ec2-user
+
+# 3. Build & Run the App
+cd hv-app
 docker build -t hv-app .
+docker run -d -p 80:80 hv-app
+
 
 
 

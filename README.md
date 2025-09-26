@@ -51,9 +51,9 @@ Deploy a simple web application on AWS using EC2 instances, ensuring high availa
 
 # Demo Link
 
-You can view the live demo of the Serverless Image Processing project here:  
+You can view the live demo of the Scalable Web Application with ALB and Auto Scaling project here:  
 
-<a href="https://drive.google.com/file/d/1hL2IYWyO8VBe94ezH_22tzpzFdHMNshr/view?usp=drive_link">
+<a href="https://drivoogle.com/file/d/1hL2IYWyO8VBe9ezH_22tzpzFdHMNshr/view?usp=drive_link">
   <img src="https://github.com/noureldien2021/Project-2-Serverless-Image-Processing-with-S3-and-Lambda/blob/main/demo2.jpg?raw=true" alt="Demo Video" width="70"/>
 </a>
 

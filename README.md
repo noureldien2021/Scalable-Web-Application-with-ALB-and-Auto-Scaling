@@ -17,7 +17,7 @@
 # Solution Overview
 
 **Description**
-Deploy a simple web application on AWS using EC2 instances, ensuring high availability and scalability with Elastic Load Balancing (ALB) and Auto Scaling Groups (ASG). The project demonstrates best practices for compute scalability, security, and cost optimization.
+Deploy a containerized web application on AWS using EC2 instances, ensuring high availability and scalability with Elastic Load Balancing (ALB) and Auto Scaling Groups (ASG). The project demonstrates best practices for compute scalability, security, and cost optimization.
 
 
 **Key AWS Services Used**
@@ -180,6 +180,11 @@ docker run -d -p 80:80 381492071612.dkr.ecr.us-east-1.amazonaws.com/hv-app:lates
 - Validated scaling, load balancing, and notification workflows.  
 
 ![Test](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/app-1.png)
+
+![Test](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/email.png)
+
+![Test](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/email-2.png)
+
 
 
 ---

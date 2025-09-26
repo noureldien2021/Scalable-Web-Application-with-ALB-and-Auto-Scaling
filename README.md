@@ -83,8 +83,6 @@ Deploy a simple web application on AWS using EC2 instances, ensuring high availa
 
 
 ```bash
-# Step 6: Connect, Install Docker, Build & Run App
-
 # 1. Connect to EC2 via SSH
 ssh -i app-HV-keypair.pem ec2-user@<EC2-Public-IP>
 

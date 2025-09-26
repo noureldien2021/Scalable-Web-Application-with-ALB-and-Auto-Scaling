@@ -36,11 +36,18 @@ Deploy a simple web application on AWS using EC2 instances, ensuring high availa
 
 
 # WorkFlow
-1. Upload image to source S3 bucket.  
-2. Lambda is triggered automatically.  
-3. Image is processed (resize, watermark).  
-4. Processed image is saved to destination bucket.  
-5. Metadata is saved to DynamoDB (optional).  
+1. Build and containerize the application (Dockerfile) and test locally.
+2. Create a custom VPC with two public subnets.
+3. Launch an EC2 instance with a Security Group allowing ports 80 (HTTP) and 22 (SSH).
+4. Connect via SSH to EC2, install Docker, and run the application container.
+5. Create an Elastic Container Registry (ECR) and push the Docker image.
+6. Create an AMI (template) from the configured EC2 instance.
+7. Configure an Auto Scaling Group (ASG) using the AMI and attach it to a Target Group.
+8. Create an Application Load Balancer (ALB) and register the Target Group.
+9. Set up monitoring and notifications:
+   - Create an SNS topic for email alerts.
+   - Create an EventBridge rule to trigger SNS on Auto Scaling events.
+10. Test the architecture (load balancing, scaling up/down, and alerts).
 
 # Learning Outcomes
 1. Setting up secure and scalable EC2-based web applications.

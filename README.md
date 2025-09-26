@@ -97,11 +97,44 @@ sudo usermod -aG docker ec2-user
 cd hv-app
 docker build -t hv-app .
 docker run -d -p 80:80 hv-app
+```
+---
 
+### Step 7: Create ECR Repository and Push Image
+- Built Docker image locally and pushed to AWS Elastic Container Registry (ECR).  
 
+![ECR](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/ECR.png)
 
+---
 
-8. Create an Application Load Balancer (ALB) and register the Target Group.
+### Step 8: Create Launch Template
+- Created a Launch Template based on the configured EC2.  
+
+![Launch Template](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/template.png)
+
+---
+
+### Step 9: Create Auto Scaling Group
+- Configured Auto Scaling Group to automatically launch EC2 instances.  
+
+![ASG](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/autoscailing.png)
+
+---
+
+### Step 10: Create Target Group
+- Defined a target group for the application load balancer.  
+
+![Target Group](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/targetgroup.png)
+
+---
+
+### Step 11: Create Application Load Balancer (ALB)
+- Configured ALB to distribute traffic across instances.  
+
+![ALB](images/step11.png)
+
+---
+
 9. Set up monitoring and notifications:
    - Create an SNS topic for email alerts.
    - Create an EventBridge rule to trigger SNS on Auto Scaling events.

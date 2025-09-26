@@ -36,7 +36,9 @@ Deploy a simple web application on AWS using EC2 instances, ensuring high availa
 
 
 # WorkFlow
-1. Build and containerize the application (Dockerfile) and test locally.
+### Step 1: Create App on Container and Test Locally
+- Built a simple app and ran it inside a Docker container locally to verify it works.  
+![App Local](images/step1.png)
 2. Create a custom VPC with two public subnets.
 3. Launch an EC2 instance with a Security Group allowing ports 80 (HTTP) and 22 (SSH).
 4. Connect via SSH to EC2, install Docker, and run the application container.

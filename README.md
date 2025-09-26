@@ -4,9 +4,6 @@
 - [Solution Overview](#solution-overview)
 - [Architecture Diagram](#architecture-diagram)
 - [AWS Services Used](#aws-services-used)
-  - [Amazon S3](#amazon-s3)
-  - [AWS Lambda](#aws-lambda)
-  - [Amazon DynamoDB](#amazon-dynamodb)
 - [WorkFlow](#WorkFlow)
 - [Learning Outcomes](#Learning-Outcomes)
 - [Demo Link](#demo-link)
@@ -39,28 +36,6 @@ Deploy a simple web application on AWS using EC2 instances, ensuring high availa
 # Architecture Diagram
 
 ![Architecture Diagram](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/digram.png)
-
-# AWS Services Used
-
-#### Amazon S3
-
-1. S3 stores data as **objects**.  
-2. SSE-S3 (Server-Side Encryption) → AWS manages the keys (default option).
-3. In this project, S3 stores both **original uploaded images** and **processed images** in separate buckets.
-4. S3 integrates seamlessly with Lambda to **trigger image processing automatically** when a new file is uploaded.
-
-
-#### AWS Lambda
-
-1. AWS Lambda is a **serverless compute service** that runs your code without provisioning or managing servers.
-2. In this project, Lambda is **triggered automatically** when a new image is uploaded to the S3 bucket.
-3. It performs **image processing tasks** such as resizing and watermarking.
-4. **Requires IAM role permissions** to access the source and destination S3 buckets.
-
-
-#### Amazon DynamoDB
-1. Amazon DynamoDB is a **fully managed NoSQL database** that provides fast and predictable performance.
-2. In this project, DynamoDB is used to **store metadata** about uploaded images (e.g., filename, size, timestamp).
 
 
 # WorkFlow

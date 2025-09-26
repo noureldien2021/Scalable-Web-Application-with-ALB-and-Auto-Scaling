@@ -6,7 +6,6 @@
 - [AWS Services Used](#aws-services-used)
 - [WorkFlow](#WorkFlow)
 - [Learning Outcomes](#Learning-Outcomes)
-- [Demo Link](#demo-link)
 - [Contact / Support](#contact--support)
 
  
@@ -194,14 +193,7 @@ docker run -d -p 80:80 381492071612.dkr.ecr.us-east-1.amazonaws.com/hv-app:lates
 3. Optimizing costs and performance using Auto Scaling policies.
 
 
-# Demo Link
-
-You can view the live demo of the Scalable Web Application with ALB and Auto Scaling project here:  
-
-<a href="https://drivoogle.com/file/d/1hL2IYWyO8VBe9ezH_22tzpzFdHMNshr/view?usp=drive_link">
-  <img src="https://github.com/noureldien2021/Project-2-Serverless-Image-Processing-with-S3-and-Lambda/blob/main/demo2.jpg?raw=true" alt="Demo Video" width="70"/>
-</a>
-
+---
 
 # Contact / Support
 

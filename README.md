@@ -24,9 +24,8 @@ Deploy a simple web application on AWS using EC2 instances, ensuring high availa
 1. EC2: Launch instances for the web app.
 2. Application Load Balancer (ALB): Distributes traffic across multiple instances.
 3. Auto Scaling Group (ASG): Ensures instances scale based on demand.
-4. Amazon RDS (Optional): Backend database (MySQL/PostgreSQL) with Multi-AZ.
-5. IAM: Role-based access to instances.
-6. CloudWatch & SNS: Monitor performance and send alerts.
+4. IAM: Role-based access to instances.
+5. CloudWatch & SNS: Monitor performance and send alerts.
 
 
 

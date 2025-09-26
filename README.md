@@ -75,7 +75,8 @@ Deploy a simple web application on AWS using EC2 instances, ensuring high availa
 ---
 
 ### Step 5: Create EC2 Instance and Configure Security Group
-- Launched EC2 with Security Group allowing ports 80 (HTTP) and 22 (SSH).  
+- Launched EC2 with Security Group allowing ports 80 (HTTP) and 22 (SSH).
+- create IAM role with AmazonEC2ContainerRegistryReadOnly policy
 
 ![EC2](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/security%20group.png)
 
@@ -158,8 +159,6 @@ docker run -d -p 80:80 381492071612.dkr.ecr.us-east-1.amazonaws.com/hv-app:lates
 
 ### Step 11: Create Application Load Balancer (ALB)
 - Configured ALB to distribute traffic across instances.  
-
-![ALB](images/step11.png)
 
 ---
 

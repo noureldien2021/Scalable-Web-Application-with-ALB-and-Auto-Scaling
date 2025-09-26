@@ -71,10 +71,9 @@ Deploy a simple web application on AWS using EC2 instances, ensuring high availa
 5. Metadata is saved to DynamoDB (optional).  
 
 # Learning Outcomes
-1. Building event-driven architectures with Lambda and S3 triggers.
-2. Understanding cost-efficient, auto-scaling serverless applications.
-3. Enhancing security using IAM roles and S3 bucket policies.
-
+1. Setting up secure and scalable EC2-based web applications.
+2. Implementing high availability using ALB and ASG.
+3. Optimizing costs and performance using Auto Scaling policies.
 
 
 # Demo Link

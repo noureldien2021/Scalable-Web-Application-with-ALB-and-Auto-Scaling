@@ -33,7 +33,7 @@ Deploy a simple web application on AWS using EC2 instances, ensuring high availa
 
 # Architecture Diagram
 
-![Architecture Diagram](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/digram.png)
+![Architecture Diagram](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/digram%20-%20Copy.png)
 
 
 # WorkFlow

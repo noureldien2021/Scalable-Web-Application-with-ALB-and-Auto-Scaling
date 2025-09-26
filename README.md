@@ -112,6 +112,32 @@ docker run -d -p 80:80 hv-app
 
 ![Launch Template](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/template.png)
 
+- add this inside userdate to install, pull image from ECR auto and run container on new EC2.
+```bash
+
+#!/bin/bash
+#Update 
+apt-get update -y
+apt-get upgrade -y
+
+#install docker
+apt-get install -y docker.io
+
+# enable and start docker
+systemctl enable docker
+systemctl start docker
+
+# insatll AWS CLI 
+snap install aws-cli --classic
+
+#login ECR
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <AWS Account ID>.dkr.ecr.us-east-1.amazonaws.com
+
+# run container
+docker run -d -p 80:80 381492071612.dkr.ecr.us-east-1.amazonaws.com/hv-app:latest
+
+```
+
 ---
 
 ### Step 9: Create Auto Scaling Group

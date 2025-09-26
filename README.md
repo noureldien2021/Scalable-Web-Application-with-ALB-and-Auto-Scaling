@@ -60,7 +60,7 @@ Deploy a simple web application on AWS using EC2 instances, ensuring high availa
 
 ### Step 4: Create Internet Gateway (IGW) and Update Route Table
 - Created an Internet Gateway and attached it to the VPC.
-- 
+
 ![IGW](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/internet%20getway.png)
 
 - Updated the Route Table to allow outbound internet traffic through the IGW.

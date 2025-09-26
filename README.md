@@ -36,17 +36,21 @@ Deploy a simple web application on AWS using EC2 instances, ensuring high availa
 
 
 # WorkFlow
+
 ### Step 1: Create App on Container and Test Locally
-- Built app and ran it inside a Docker container locally to verify it works.  
+- Built app and ran it inside a Docker container locally to verify it works.
+  
 ![App Local](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/local.png)
 
 - Open browser and navigate to http://localhost:80 to check the application is running
+  
 ![App Local](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/local-app-1.png)
 
 ---
 
 ### Step 2: Create VPC
 - Created a custom VPC to isolate the infrastructure.
+  
 ![App Local](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/VPC.png)
 
 ---
@@ -80,8 +84,6 @@ Deploy a simple web application on AWS using EC2 instances, ensuring high availa
 ---
 
 ### Step 6: Run App on EC2
-
-
 ```bash
 # 1. Connect to EC2 via SSH
 ssh -i app-HV-keypair.pem ec2-user@<EC2-Public-IP>
@@ -112,7 +114,7 @@ docker run -d -p 80:80 hv-app
 
 ![Launch Template](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/template.png)
 
-- add this inside userdate to install, pull image from ECR auto and run container on new EC2.
+- Added User Data script to automatically install Docker, authenticate with Amazon ECR, pull the application image, and run the container on any new EC2 instance launched by the Auto Scaling group.
 ```bash
 
 #!/bin/bash

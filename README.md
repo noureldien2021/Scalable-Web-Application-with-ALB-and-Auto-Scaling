@@ -39,6 +39,7 @@ Deploy a simple web application on AWS using EC2 instances, ensuring high availa
 ### Step 1: Create App on Container and Test Locally
 - Built app and ran it inside a Docker container locally to verify it works.  
 ![App Local](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/local.png)
+
 - Open browser and navigate to http://localhost:80 to check the application is running
 ![App Local](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/local-app-1.png)
 2. Create a custom VPC with two public subnets.

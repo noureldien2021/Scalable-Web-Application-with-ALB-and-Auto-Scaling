@@ -19,7 +19,7 @@
 Deploy a containerized web application on AWS using EC2 instances, ensuring high availability and scalability with Elastic Load Balancing (ALB) and Auto Scaling Groups (ASG). The project demonstrates best practices for compute scalability, security, and cost optimization.
 
 
-**Key AWS Services Used**
+# Key AWS Services Used
 1. EC2: Launch instances for the web app.
 2. Application Load Balancer (ALB): Distributes traffic across multiple instances.
 3. Auto Scaling Group (ASG): Ensures instances scale based on demand.

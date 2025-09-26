@@ -69,7 +69,15 @@ Deploy a simple web application on AWS using EC2 instances, ensuring high availa
 
   
 ---
-5. Create an Elastic Container Registry (ECR) and push the Docker image.
+
+### Step 5: Create EC2 Instance and Configure Security Group
+- Launched EC2 with Security Group allowing ports 80 (HTTP) and 22 (SSH).  
+
+![EC2](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/security%20group.png)
+
+![EC2](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/base%20ec2.png)
+
+---
 6. Create an AMI (template) from the configured EC2 instance.
 7. Configure an Auto Scaling Group (ASG) using the AMI and attach it to a Target Group.
 8. Create an Application Load Balancer (ALB) and register the Target Group.

@@ -38,7 +38,7 @@ Deploy a simple web application on AWS using EC2 instances, ensuring high availa
 
 # Architecture Diagram
 
-![Architecture Diagram](https://github.com/noureldien2021/Project-2-Serverless-Image-Processing-with-S3-and-Lambda/blob/main/_Serverless%20Image%20Processing.jpeg?raw=true)
+![Architecture Diagram](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/digram.png)
 
 # AWS Services Used
 

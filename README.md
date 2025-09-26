@@ -42,7 +42,9 @@ Deploy a simple web application on AWS using EC2 instances, ensuring high availa
 
 - Open browser and navigate to http://localhost:80 to check the application is running
 ![App Local](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/local-app-1.png)
-2. Create a custom VPC with two public subnets.
+### Step 2: Create VPC
+- Created a custom VPC to isolate the infrastructure.
+![App Local](https://github.com/noureldien2021/Scalable-Web-Application-with-ALB-and-Auto-Scaling/blob/main/screen/VPC.png)
 3. Launch an EC2 instance with a Security Group allowing ports 80 (HTTP) and 22 (SSH).
 4. Connect via SSH to EC2, install Docker, and run the application container.
 5. Create an Elastic Container Registry (ECR) and push the Docker image.
